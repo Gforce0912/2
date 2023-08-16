@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Georama&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<script src="js.js" defer></script>
+</head>
+<body id="body"> 
+    <div class="mother">
+        <header style="display: flex;" id="mobileBlock">
+            <!-- header-logo -->
+            <a href="#">
+                <img src="img/Logo-Relocation.svg" alt="URl-Relocation.svg" alt="URelocation" class="header-logo">
+                <p style="font-size: 13px;" class="header-logo-p">One platform meeting all <br>your relocation</p>
+            </a>  
+
+            <!-- header-ul -->
+            <ul class="header-ul" style="display: flex;">
+                <li class="header-li"><a href="#"><p class="header-li-p">Home</p></a></li>
+                <li class="header-li"><button class="header-li-btn" onclick="servicesClick()" id="headerLiBtn">Services<img src="img/Vector1.svg" alt="" class="header-ul-li-img" id="header-ul-li-img"></button></li>
+                <li class="header-li"><a href="#"><p class="header-li-p">Blog</p></a></li>
+                <li class="header-li"><a href="#"><p class="header-li-p">Contact</p></a></li>
+            </ul>
+
+            <!-- header-btn -->
+            <button type="button" class="header-btn">
+                <img src="img/Vector2 (Traced).svg" alt="" class="header-btn-vector2">
+                <p class="header-btn-p">Take a scroling test</p>
+            </button>
+
+            <!--Media-burger-->
+            <div class="header-li-burger" onclick="mobilBlock()"><a href="#">
+                <img src="img/mobil-burger.svg" alt="" onclick="">
+            </a></div>
+
+            <!-- header-services-block -->
+            <div class="header-services-block" id="header-services-block">
+                <img src="img/Arrow 1.svg" alt="exit" class="head-services-block-exit" onclick="exitServices()">   
+                <nav class="services-block">
+                    <a href="#1"><p>Global Talent Vise</p></a>
+                    <a href="#2"><p>Post-relocation</p></a>
+                    <a href="#3"><p>Settelement in the UK</p></a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="mobileBlock">
+            <!-- Main-h1 -->
+            <div class="main-h1">
+                    <h1>One platform,
+                    <br> meeting <span style="color: #5EB083;">all your 
+                    <br> relocation</span> needs</h1>
+                </span>
+            </div>
+            <div class="main-button">
+                <button type="button" class="main-btn">
+                    <img src="img/Vector2 (Traced).svg" alt="" class="main-btn-vector2">
+                    <p class="main-btn-p">Take a scroling test</p>
+                </button>
+                <p class="main-button-p">Evaluate your chances and get detailed <br>feedback from our team</p>
+            </div>
+            <!--Rectangle-->
+            <div class="main-rectangle" style="display: flex;">
+                <img src="img/Rectangle 1.svg" alt="" class="main-rectangle-img" class="main-rectangle-img1">
+                <img src="img/Rectangle 2.svg" alt="" class="main-rectangle-img" class="main-rectangle-img2">
+                <img src="img/Rectangle 3.svg" alt="" class="main-rectangle-img" class="main-rectangle-img3">
+                <img src="img/Rectangle 4.svg" alt="" class="main-rectangle-img" class="main-rectangle-img4">
+                <img src="img/Rectangle 5.svg" alt="" class="main-rectangle-img" class="main-rectangle-img5">
+                <img src="img/Rectangle 6.svg" alt="" class="main-rectangle-img" class="main-rectangle-img6">
+                <img src="img/Rectangle 7.svg" alt="" class="main-rectangle-img" class="main-rectangle-img7">
+                <img src="img/Rectangle 8.svg" alt="" class="main-rectangle-img" class="main-rectangle-img8">
+                <img src="img/Rectangle 9.svg" alt="" class="main-rectangle-img" class="main-rectangle-img9">
+            </div>
+            <!--Mobile-block-->
+            <div class="mobile-ul-li">
+                <ul class="mobile-ul" id="mobile-block">
+                    <li class="mobile-ul-li"><a href="#"><p class="main-li-p">Home</p></a></li>
+                    <li class="mobile-ul-li"><p class="main-li-p" style="cursor: pointer;">Services <img src="img/Vector1.svg" alt=""></p></li>
+                        <ul class="mobile-ul-ul" id="mobile-ul-ul">
+                            <li class="mobile-ul-ul-li"><a href="#1"> <p class="mobile-ul-ul-li-p">Global Talent Vise</p></a></li>
+                            <li class="mobile-ul-ul-li"><a href="#2"> <p class="mobile-ul-ul-li-p">Post-relocation</p></a></li>
+                            <li class="mobile-ul-ul-li"><a href="#3"> <p class="mobile-ul-ul-li-p">Settelement in the UK</p></a></li>
+                        </ul>
+                    <li class="mobile-ul-li"><a href="#"><p class="main-li-p">Blog</p></a></li>
+                    <li class="mobile-ul-li"><a href="#"><p class="main-li-p">Contact</p></a></li>
+                </ul>
+            </div>
+
+            <div class="main-h2">
+                <div class="main-h2-immigration">
+                    <h2 class="main-h2-immigration-h2">Immigration made easy</h2>
+                    <p style="color:#5B6574; line-height: 30px; font-size: 18px; margin-top: -20px;">Urelocation simplifies the visa process for you and your international emoloyees.<br> 
+                    We'll hendle the fine details so you can focus on other tasks
+                    </p>
+                </div>
+                <div class="main-h2-fastService">
+                    <div>
+                        <h2 class="main-h2-fastService-h2">Fast Service</h2>
+                        <p  style="color:#5B6574; line-height: 30px; font-size: 18px;  margin-top: -10px;">We research, build, submit, and get approved visas in a fraction <br>
+                        of the time while working around your timelines.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/fast_service_img.svg" alt="" class="fastService-img">
+                    </div>
+                </div>
+
+                <div class="main-h2-fullControll">
+                    <div>
+                        <img src="img/full_controll_img.svg" alt="" class="fullControl-img">
+                    </div>
+                    <div class="main-h2-fullControll-h2">
+                        <h2 class="main-h2-fullContro-h2">Full control and visiblity</h2>
+                        <p  style="color:#5B6574; line-height: 30px; font-size: 18px;  margin-top: -10px;">
+                        Our intuitive platform guides you and your employee through <br>
+                        every step of the immigration process, with at-a-glance status <br>
+                        updates along the way.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main-h2-personalized">
+                    <div>
+                        <h2 class="main-h2-personalized-h2">personalized case managers</h2>
+                        <p  style="color:#5B6574; line-height: 30px; font-size: 18px;  margin-top: -10px;">
+                            Feel confident with our team of global mobility experts. The're <br>
+                            on hand to answer all your questions, lt=etting you focus on what <br>
+                            really matters.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/personalized_img.png" alt="" class="fastService-img">
+                    </div>
+                </div>
+            </div>
+            <div class="main-who-has"  style="text-align: center;">
+                <h2 class="main-who-has-h2">Who has relocation with the help <br> 
+                    of immirgam?</h2>
+                <p  style="color:#5B6574; line-height: 30px; font-size: 18px;  margin-top: -10px;">
+                    You can bw next! Start your relocation journey now
+                </p>
+                <div class="main-who-has-img">
+                    <ul>
+                        <li><a href="#"><img src="img/developer.svg" alt="" class="main-who-has-img-a"> <p>Developer</p></a></li>
+                        <li><a href="#"><img src="img/Data scientsists.svg" alt="" class="main-who-has-img-a"> <p>Data scientsists</p></a></li>
+                        <li><a href="#"><img src="img/UI_disigner.svg" alt="" class="main-who-has-img-a"> <p>Ui disigner</p></a></li>
+                        <li><a href="#"><img src="img/game_developman.svg" alt="" class="main-who-has-img-a"> <p>Game developer</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-how-can">
+                <div class="main-how-can-h2">
+                    <h2>How can I start my <br> 
+                    Global Talent Visa case?
+                    </h2>
+                    <p style="color:#5B6574; line-height: 30px; font-size: 18px;  margin-top: -10px;">Is here to guide you on every step of preparing a case and becoming a Global <br>
+                        Talent. To start your UK relocation journey choose a preferred route on our Platform:
+                    </p>
+                </div>
+
+                <div class="main-how-can-chose" style="display: flex;">
+                    <div class="main-how-can-chose-v1">
+                        <h2 style="color:black; margin-top: 40px; margin-bottom: -5px; font-size: 15px;">£5,500</h2>
+                        <div class="main-how-can-chose-v1-1" style="display: flex; font-size: 13px;">
+                            <img src="img/Frame 18.svg" alt="1" class=".main-how-can-chose-v1-1-img"  style="width: 40px;">
+                            <p>Paid in 2 insalaments -- pre-payment when singing the contrackt and post- <br>
+                            payment after receiving the Endorsement.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-2" style="display: flex; font-size: 13px;">
+                            <img src="img/Frame 19.svg" alt="1" class=".main-how-can-chose-v1-2-img" style="width: 40px;">
+                            <p>Paid in 5 five equal instalments first of which is payable when singing the <br>
+                            contract, and the remaining four payments with an interval of one month.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-inCase" style="color:#5B6574; line-height: 16px; font-size: 13px;  margin-top: -30px;">
+                            <p >
+                                *In case of the second failed attempt to get the Endorsement, you are entitled to a 70% <br>
+                                refund of the amount payed.
+                            </p>
+                            <p>
+                                *pay the entire amount and receive an extra 15% discount.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-1-btn">
+                            <a href="#">
+                                <button type="button" class="main-how-can-chose-v1-1-button">
+                                <p class="main-how-can-chose-v1-1-button-p">Chose</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main-how-can-chose-v1" style="margin-left: -100px;">
+                        <h2 style="color:black; margin-top: 40px; margin-bottom: -5px; font-size: 13px;">£4,000</h2>
+                        <div class="main-how-can-chose-v1-1" style="display: flex; font-size: 13px;">
+                            <img src="img/Frame 18.svg" alt="1" class=".main-how-can-chose-v1-1-img"  style="width: 40px;">
+                            <p>Paid in 2 insalaments -- pre-payment when singing the contrackt and <br>
+                            post-payment after receiving the Endorsement.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-2" style="display: flex; font-size: 13px;">
+                            <img src="img/Frame 19.svg" alt="1" class=".main-how-can-chose-v1-2-img" style="width: 40px;">
+                            <p>Paid in 5 five equal instalments first of which is payable when singing the <br>
+                            contract, and the remaining four payments with an interval of one month.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-inCase" style="color:#5B6574; line-height: 16px; font-size: 13px;  margin-top: -30px;">
+                            <p>
+                                *pay the entire amount and receive an extra 15% discount.
+                            </p>
+                            <p>
+                                *Non-refundable rate.
+                            </p>
+                        </div>
+                        <div class="main-how-can-chose-v1-1-btn" style="margin-top: 30px;">
+                            <a href="#">
+                                <button type="button" class="main-how-can-chose-v1-1-button">
+                                <p class="main-how-can-chose-v1-1-button-p">Chose</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-what-is">
+                <h2 style="color: #32333D;">What is <br>
+                URELocation Platform?
+                </h2>
+                <h4>Full transparency</h4>
+                <p style="margin-top: -10px;">Live dashboard overiewing the process</p>
+                <div class="main-what-is-btn">
+                    <button class="main-what-is-btn-button">clear statuses</button>
+                    <button class="main-what-is-btn-button" style="width: 80px;">timeline</button>
+                    <button class="main-what-is-btn-button" style="width: 60px;">steps</button>
+                    <button class="main-what-is-btn-button">progress</button>
+                </div>
+                <img src="img/what_is_img.svg" alt="" class="main-what-is-img">
+            </div>
+
+            <div class="main-FAQ">
+                <h2  style="font-size: 50px;">FAQ</h2>
+                <h4 style="font-size: 18px;">What does a Global Talent Visa offer?</h4>
+                <h4 style="font-size: 18px;">Who can aply for the Global Talent Visa?</h4>
+                <h4 style="font-size: 18opx; color: #5EB083">What does a Global Talent Visa offer?</h4>
+                <p style="color:#325B65; font-size: 17px;">Global Talent in digital tech will need to attach a comleted Visa application from, which includes:</p>
+                <ul style="list-style-type: disc; color:#325B65;">
+                    <li>A Personal Stament;</li>
+                    <li>A CV, containing your experience, contributions to the relevant field, publications, etc;</li>
+                    <li>At least 3 letters of recommendstion from recognised leaders in the tech industry;</li>
+                    <li>Up to 0 pieces of evidence in relation to the relrvant Eligibility Criteria.</li>
+                </ul>
+                <h4 style="font-size: 20px;">What does Immigram offer?</h4>
+            </div>
+        </main>
+
+        <footer class="footer" style="display: flex;">
+            <div class="footer-logo" style="display: flex;">
+                <img src="img/Logo-Relocation — white.svg" alt="URl-Relocation.svg" alt="URelocation" class="header-logo">
+                <p style="color: #747C87; margin-left: 20px;">All immigration advice is <br>
+                   provieded by OISC regulated <br>
+                   parther. Ref No. F202100337
+                </p>
+            </div>
+            <div class="address">
+                <p  style="color: #FDFDFD; margin-top: -10px;">Address</p>
+                <p style="color: #707882; margin-top: -10px; line-height: 20px;">132-134 lots Rd, Chelsea, <br>
+                   London SW10 ORJ 
+                </p>
+            </div>
+            <div class="follow">
+                <p style="color: white; margin-left: 75px;">Follow Us</p>
+                <ul style="display: flex;">
+                    <li><a href="#"><img src="img/image 3 (Traced).svg" alt="in"></a></li>
+                    <li><a href="#"><img src="img/image 4 (Traced).svg" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/image 5 (Traced).svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="img/image 6 (Traced).svg" alt="telegram"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
